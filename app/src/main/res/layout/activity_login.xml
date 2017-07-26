@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.grafeev.myapplication.LoginActivity"
+    android:weightSum="1"
+    android:background="@drawable/login_fon"
+>
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0.08"
+        android:drawableLeft="@drawable/icon_login"
+        android:ems="10"
+        android:hint="login"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/editTextPass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:drawableLeft="@drawable/icon_pass"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="#ff386646"
+        android:onClick="onClick"
+        android:text="Войти"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#ff386646"
+        android:text="Регистрация"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+
+</RelativeLayout>
